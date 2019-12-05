@@ -1,0 +1,105 @@
+.wrap {
+	position: relative;
+
+	header.inside-pages {
+		position: fixed;
+		top: 20px;
+		width: 100%;
+		text-align: center;
+
+		img {
+			width: 180px;
+		}
+	}
+
+	.language-options {
+		width: 100%;
+		margin-top: 340px;
+		position: absolute;
+		
+		h2 {
+			position: fixed;
+			width: 100%;
+			font-family: 'Chelsea Market', sans-serif;
+			color: #aaa;
+			font-size: 1.4em;
+			text-align: center;
+		}
+
+		ul {
+			display: flex;
+			flex-wrap: nowrap;
+			margin: 0 auto;
+			padding-top: 80px;
+			overflow-x: auto; 
+			&::-webkit-scrollbar {
+				display: none;
+			}
+
+			li {
+				margin-bottom: 40px;
+				padding: 0 10px;
+
+				a {
+					display: flex;
+					flex-wrap: wrap;
+					flex-direction: column;
+					align-items: center;
+					text-decoration: none;
+					
+					.flag {
+						width: 80px;
+						margin-bottom: 10px;
+					}
+
+					span {
+						font-family: Helvetica;
+						font-size: 1.2em;
+						color: #fff;
+					}
+
+					span:hover {
+						color: #f29322;
+					}
+				}
+			}
+		}		
+	}
+
+	@media screen and (min-width: 768px) {
+		header.inside-pages {
+			text-align: left;
+			padding: 20px 80px;
+		}
+
+		.language-options {
+			margin-top: 200px;
+
+			h2 {
+				margin-top: 125px;
+			}
+
+			ul {
+				margin-top: 20px;
+				width: 60%;
+				padding-top: 180px;
+
+				li {
+					flex-basis: 25%;
+
+					a .flag {
+						margin-bottom: 15px;
+					}
+				}
+			}
+		}		
+	}
+
+	@media screen and (min-width: 1024px) {
+		.language-options {
+			ul {
+				width: 50%;
+			}
+		}
+	}	
+}

@@ -1,0 +1,18 @@
+@import 'reset';
+@import 'home';
+@import 'languages';
+@import 'swearing';
+@import 'stars';
+@import 'tree';
+@import 'owl';
+@import 'owlswear';
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: #0b0b0b;
+}
